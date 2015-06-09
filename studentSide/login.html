@@ -1,0 +1,91 @@
+﻿<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<html>
+
+<head>
+
+	<style type="text/css">
+		.btn{
+			width: 80px;
+			height: 35px;
+			color: blue;
+			border-radius:5px;
+			font-size: 25px;
+		}
+		.btn:hover{
+			background-color: lightgreen;
+			cursor: pointer;
+		}
+		body{
+			font-size: 15px;
+			font-family: 微软雅黑;
+
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		function onBtnStudentClick(){
+			var btnRegist = document.getElementById("btnRegist");
+
+			btnRegist.style.display = "none";
+		}
+
+		function onBtnTeacherClick(){
+			var btnRegist = document.getElementById("btnRegist");
+
+			btnRegist.style.display = "inline";
+		}
+
+		function onBtnLoginClick(){
+			var teacher = document.getElementById("teacher");
+
+			if(teacher.checked === true){
+				window.location = "./teacherLogin.html";
+			}else{
+				window.location = "./studentLogin.html";
+			}
+		}
+
+		function onBtnRegistClick(){
+			window.location = "./teacherRegist.html";
+		}
+
+		
+
+	</script>
+
+</head>
+<body onload="onBodyLoad();">
+<div style="position:absolute; width:100%; height:100%;left:0px; top:0px;">
+	<div style="margin:0px auto; position:relative; width:100%;height:100%;">
+		<img id="compman" src="./picture/view1.jpg" width="100%" height="967" />
+	</div>
+</div>
+<div style="position:absolute; width:100%; height:100%; left:0px; top:calc(50% - 150px); margin:0px;">
+	<div style="margin:0px auto; position:relative; height:100%; width:600px;">
+
+		<h1>欢迎来到西部量化高频交易教学考评系统</h1>
+		<h2>您的身份是：</h2>
+		<table style="margin:0px auto; position:relative; width:100%; height:100px;">
+			<tr>
+				<td colspan="3">
+					<input type="radio" id="teacher" name="choice" checked="true" onclick="onBtnTeacherClick();" />教师
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="radio" id="student" name="choice" onclick="onBtnStudentClick();" />学生
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="btnLogin" name="login" value="登陆" class="btn" onclick="onBtnLoginClick();">
+					<input type="button" id="btnRegist" name="regist" value="注册" class="btn" style="position:relative; left:calc(50% - 140px);" onclick="onBtnRegistClick();">
+					<input type="button" id="btnCancle" name="cancle" value="取消" class="btn" style="float:right;">
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

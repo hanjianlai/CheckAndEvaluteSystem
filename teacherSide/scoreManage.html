@@ -1,0 +1,110 @@
+﻿<meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+<html>
+	
+	<head>
+		<style type="text/css">
+		#mainBox{
+			border: 2pt solid black;
+			width: 600px;
+			height: 600px;
+			margin: 0px auto;
+		}
+
+		#myBox{
+			width:560px;
+			height:560px;
+			margin:20px;
+		}
+
+		#myTable{
+			width:560px;
+			margin:10px 0px 0px 0px;
+			font-family: 微软雅黑;
+		}
+
+		.myBtn{
+			width: 100px;
+			height: 30px;
+			border-radius: 5px;
+			margin: 20px 10px 10px 45px;
+			font-family: 微软雅黑;
+			font-size: 15px;
+		}
+
+		.myBtn:hover{
+			cursor: pointer;
+		}
+
+		.myTr{
+			height: 40px;
+		}
+
+		.myTd{
+			padding: 5px;
+			font-family: 微软雅黑;
+			font-size: 20px;
+		}
+		</style>
+		<title></title>
+	</head>
+	<body background="./backgroundImg.jpg">
+		<div id="mainBox">
+			<div id="myBox">
+				<table style="width:100%;">
+					<tr class="myTr">
+						<td class="myTd">
+							指导老师：
+						</td>
+						<td class="myTd">
+							<input type="text" />
+						</td>
+						<td class="myTd">
+							班级：
+						</td>
+						<td class="myTd">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr class="myTr">
+						<td class="myTd">
+							学号：
+						</td>
+						<td class="myTd">
+							<input type="text" />
+						</td>
+						<td class="myTd">
+							姓名：
+						</td>
+						<td class="myTd">
+							<input type="text" />
+						</td>
+					</tr>
+					<tr class="myTr">
+						<td class="myTd">
+							课次：
+						</td>
+						<td class="myTd">
+							<input type="text" />
+						</td>
+					</tr>
+				</table>
+				<input class="myBtn" type="button" value="查询" />
+				<input class="myBtn" type="button" value="修正" />
+				<input class="myBtn" type="button" value="导出" />
+				<table id="myTable" border="1" cellspacing="0">
+					<tr>
+						<td>编号</td>
+						<td>指导老师</td>
+						<td>学号</td>
+						<td>姓名</td>
+						<td>课次</td>
+						<td>交易成绩</td>
+						<td>表现成绩</td>
+						<td>笔试成绩</td>
+						<td>总评</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

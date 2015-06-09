@@ -1,0 +1,128 @@
+﻿<meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+<html>
+	
+	<head>
+		<style type="text/css">
+		#body{
+			background:url(./backgroundImg.jpg);
+			background-size:cover;
+		}
+
+		#mainBox{
+			border: 2pt solid black;
+			width: 600px;
+			height: 600px;
+			margin: 0px auto;
+		}
+
+		#myBox{
+			height: 560px;
+			margin: 20px;
+			position: relative;
+		}
+
+		#myTable{
+			width: 400px;
+			position: absolute;
+			left: 5px;
+			top: 10px;
+		}
+
+		#myPhoto{
+			border: 1px solid black;
+			width: 110px;
+			height: 160px;
+			position: absolute;
+			left: 420px;
+			top: 10px;
+		}
+
+		.myBtn{
+			width: 100px;
+			height: 30px;
+			border-radius: 5px;
+			font-family: 微软雅黑;
+			font-size: 15px;
+			font-weight: bold;
+			position: absolute;
+			top:240px;
+		}
+
+		.myBtn:hover{
+			cursor: pointer;
+		}
+
+		.myUploadBtn{
+			width:60px;
+			height:25px;
+			border-radius:5px;
+			position:absolute;
+			left:445px;
+			top:180px;
+			font-size: 15px;
+		}
+
+		 .myUploadBtn:hover{
+		 	cursor: pointer;
+		 }
+
+		.myTr{
+			height: 20px;
+		}
+
+		.myTd{
+			padding: 5px;
+			font-family: 微软雅黑;
+			font-size: 20px;
+		}
+		</style>
+	</head>
+	<body id="body">
+		<div id="mainBox">
+			<div id="myBox">
+				<table id="myTable">
+					<tr class="myTr">
+						<td class="myTd">
+							指导老师：
+						</td>
+						<td class="myTd">
+							<input type="text"/>
+						</td>
+					</tr>
+
+					<tr class="myTr">
+						<td class="myTd">
+							联系电话：
+						</td>
+						<td class="myTd">
+							<input type="text"/>
+						</td>
+					</tr>
+
+					<tr class="myTr">
+						<td class="myTd">
+							邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：
+						</td>
+						<td class="myTd">
+							<input type="text"/>
+						</td>
+					</tr>
+
+					<tr class="myTr">
+						<td class="myTd">
+							寄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语：
+						</td>
+						<td class="myTd">
+							<textarea cols="30" rows="5"></textarea>
+						</td>
+					</tr>
+				</table>
+				<div id="myPhoto">	
+				</div>
+				<input class="myUploadBtn" type="button" value="上传" />
+				<input class="myBtn" type="button" value="完善资料" style="left:40px;"/>
+				<input class="myBtn" type="button" value="修改"     style="left:200px;"/>
+			</div>
+		</div>
+	</body>
+</html>
